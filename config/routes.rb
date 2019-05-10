@@ -13,5 +13,8 @@ Rails.application.routes.draw do
 
     get "/actor" => "actors#show"
 
+    get "/actor/:id" => "actors#show"
+
+
   end
 end
