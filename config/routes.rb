@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
     get "movie_count" => "movies#movie_count"
 
+    get "/actor" => "actors#show"
+
   end
 end
