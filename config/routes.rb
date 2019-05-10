@@ -15,6 +15,6 @@ Rails.application.routes.draw do
 
     get "/actor/:id" => "actors#show"
 
-
+    post "/actor" => "actors#show"
   end
 end
