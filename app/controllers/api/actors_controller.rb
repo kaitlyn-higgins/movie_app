@@ -7,12 +7,32 @@ class Api::ActorsController < ApplicationController
 
   def show
     @actor = Actor.find(params[:id])
-    render 'first_actor.json.jbuilder'  
+    render 'show.json.jbuilder'  
   end
 
-  def show
-    request = params[:id]
-    @actor = Actor.find(params[:id])
+  def create
+    @actor = Actor.new(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      known_for: params[:known_for]
+      )
+    @actor.save
     render 'show.json.jbuilder'
   end
+
+  def update
+    @actor = Actor.find(params[:id])
+      @actor.first_name = params[:first_name] || @actor.first_name
+      @actor.last_name = params[:last_name] || @actor.last_name
+      @actor.known_for = params[:known_for] || @actor.known_for
+    @actor.save
+    render 'show.json.jbuilder'
+  end
+
+  def destroy
+    @actor = Actor.find(params[:id])
+    @actor.destroy
+    render json: {message: "Actor has been removed."}
+  end
+
 end
