@@ -1,5 +1,11 @@
 actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 actor.save
+actor = Actor.new({first_name: "Jennifer", last_name: "Lawrence", known_for: "Hunger Games"})
+actor.save
+actor = Actor.new({first_name: "Tom", last_name: "Cruise", known_for: "Top Gun"})
+actor.save
+actor = Actor.new({first_name: "Mila", last_name: "Kunis", known_for: "That 70's Show"})
+actor.save
 
 
 movie = Movie.create(title: "Eternal Sunshine of the Spotless Mind", year: 2004, plot: "A woman goes under a procedure to forget her former boyfriend after a painful breakup. He finds out that she does this and elects to get the same memory removal procedure. While in the midst of the removal process, he watches all of his happy memories of her vanish and changes his mind - now he must battle to keep those memories from vanishing forever.")
