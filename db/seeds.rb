@@ -1,14 +1,3 @@
-Actor.create!([
-  {first_name: "Jennifer", last_name: "Lawrence", known_for: "Hunger Games", gender: "F", age: 28},
-  {first_name: "Natalie", last_name: "Portman", known_for: "Black_Swan", gender: "F", age: 37},
-  {first_name: "Brad", last_name: "Pitt", known_for: "Fight Club", gender: "M", age: 55},
-  {first_name: "Will", last_name: "Smith", known_for: "Men In Black", gender: "M", age: 50},
-  {first_name: "Robin", last_name: "Williams", known_for: "Mrs. Doubtfire", gender: "M", age: 63},
-  {first_name: "Angelina", last_name: "Jolie", known_for: "Tomb Raider", gender: "F", age: 43},
-  {first_name: "Mila", last_name: "Kunis", known_for: "That 70's Show", gender: "F", age: 35},
-  {first_name: "Tom", last_name: "Cruise", known_for: "Top Gun", gender: "M", age: 56},
-  {first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock", gender: "M", age: 42}
-])
 Movie.create!([
   {title: "Guardians Of The Galaxy", year: 2014, plot: "A space adventurer finds hismself at the quarry of bounty hunters after he steals an orb. He makes a truce with four misfits, but when he discovers the orb's true power and the threat it poses, he must rally his group to save the universe.", director: "James Gunn", english: true},
   {title: "Annihilation", year: 2018, plot: "A group of scientists who enter \"The Shimmer\", a mysterious quarantined zone of mutating plants and animals.", director: "Alex Garland", english: true},
@@ -20,3 +9,15 @@ Movie.create!([
   {title: "Blade Runner 2049", year: 2017, plot: "An NYPD blade runner uncovers a long buried secret that has potential to plunge what’s left of society into chaos. He goes on a quest to find a former blade runner who has been missing for 30 years.", director: "Denis Villeneuve", english: true},
   {title: "Finding Nemo", year: 2003, plot: "A clown fish who swims too close to the surface is caught by a diver, and his dad sets out to find him. A blue reef fish with a terribly short memory joins the search party. Meanwhile, Nemo, the missing clown fish, plots his escape from a dentist’s fish tank.", director: "Andrew Stanton", english: true}
 ])
+Actor.create!([
+  {first_name: "Natalie", last_name: "Portman", known_for: "Black_Swan", gender: "F", age: 37, movie_id: 2},
+  {first_name: "Brad", last_name: "Pitt", known_for: "Fight Club", gender: "M", age: 55, movie_id: 3},
+  {first_name: "Will", last_name: "Smith", known_for: "Men In Black", gender: "M", age: 50, movie_id: 7},
+  {first_name: "Robin", last_name: "Williams", known_for: "Mrs. Doubtfire", gender: "M", age: 63, movie_id: 6},
+  {first_name: "Angelina", last_name: "Jolie", known_for: "Tomb Raider", gender: "F", age: 43, movie_id: 1},
+  {first_name: "Mila", last_name: "Kunis", known_for: "That 70's Show", gender: "F", age: 35, movie_id: 9},
+  {first_name: "Tom", last_name: "Cruise", known_for: "Top Gun", gender: "M", age: 56, movie_id: 5},
+  {first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock", gender: "M", age: 42, movie_id: 8},
+  {first_name: "Jennifer", last_name: "Lawrence", known_for: "Hunger Games", gender: "F", age: 28, movie_id: 4}
+])
+
