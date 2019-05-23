@@ -10,7 +10,6 @@ Movie.create!([
   {title: "Finding Nemo", year: 2003, plot: "A clown fish who swims too close to the surface is caught by a diver, and his dad sets out to find him. A blue reef fish with a terribly short memory joins the search party. Meanwhile, Nemo, the missing clown fish, plots his escape from a dentist’s fish tank.", director: "Andrew Stanton", english: true}
 ])
 Actor.create!([
-  {first_name: "Natalie", last_name: "Portman", known_for: "Black_Swan", gender: "F", age: 37, movie_id: 2},
   {first_name: "Brad", last_name: "Pitt", known_for: "Fight Club", gender: "M", age: 55, movie_id: 3},
   {first_name: "Will", last_name: "Smith", known_for: "Men In Black", gender: "M", age: 50, movie_id: 7},
   {first_name: "Robin", last_name: "Williams", known_for: "Mrs. Doubtfire", gender: "M", age: 63, movie_id: 6},
@@ -18,6 +17,11 @@ Actor.create!([
   {first_name: "Mila", last_name: "Kunis", known_for: "That 70's Show", gender: "F", age: 35, movie_id: 9},
   {first_name: "Tom", last_name: "Cruise", known_for: "Top Gun", gender: "M", age: 56, movie_id: 5},
   {first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock", gender: "M", age: 42, movie_id: 8},
-  {first_name: "Jennifer", last_name: "Lawrence", known_for: "Hunger Games", gender: "F", age: 28, movie_id: 4}
+  {first_name: "Jennifer", last_name: "Lawrence", known_for: "Hunger Games", gender: "F", age: 28, movie_id: 4},
+  {first_name: "Natalie", last_name: "Portman", known_for: "Garden_State", gender: "F", age: 37, movie_id: 2}
 ])
-
+User.create!([
+  {name: "Derick Mayer", email: "derick@gmail.com", password_digest: "$2a$10$95nnhgosEULsJlmhNEZ9MOigpLp5BT9vGlvEgvR9w80Il5JNVtjPa", admin: false},
+  {name: "Morgan Taylor", email: "morgan@gmail.com", password_digest: "$2a$10$2aoaYjkwhILBc83QUdXy4elDAg88fHWI0tPaUz26vOd5gU0N1NqEC", admin: false},
+  {name: "Ally Jones", email: "ally@gmail.com", password_digest: "$2a$10$87jv.FloSTYF3l2WzgrHlOhWVnP25DoVKamkKOuMdd5.YZV04BHR6", admin: true}
+])
