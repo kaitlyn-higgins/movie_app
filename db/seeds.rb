@@ -25,3 +25,36 @@ User.create!([
   {name: "Morgan Taylor", email: "morgan@gmail.com", password_digest: "$2a$10$2aoaYjkwhILBc83QUdXy4elDAg88fHWI0tPaUz26vOd5gU0N1NqEC", admin: false},
   {name: "Ally Jones", email: "ally@gmail.com", password_digest: "$2a$10$87jv.FloSTYF3l2WzgrHlOhWVnP25DoVKamkKOuMdd5.YZV04BHR6", admin: true}
 ])
+Genre.create!([
+  {name: "Sci-Fi"},
+  {name: "Comedy"},
+  {name: "Drama"},
+  {name: "Romance"},
+  {name: "Adventure"},
+  {name: "Action"},
+  {name: "Thriller"}
+])
+MovieGenre.create!([
+  {genre_id: 1, movie_id: 1},
+  {genre_id: 1, movie_id: 2},
+  {genre_id: 1, movie_id: 3},
+  {genre_id: 1, movie_id: 5},
+  {genre_id: 1, movie_id: 7},
+  {genre_id: 1, movie_id: 8},
+  {genre_id: 2, movie_id: 1},
+  {genre_id: 2, movie_id: 5},
+  {genre_id: 2, movie_id: 6},
+  {genre_id: 2, movie_id: 9},
+  {genre_id: 3, movie_id: 4},
+  {genre_id: 4, movie_id: 4},
+  {genre_id: 5, movie_id: 1},
+  {genre_id: 5, movie_id: 2},
+  {genre_id: 5, movie_id: 8},
+  {genre_id: 5, movie_id: 9},
+  {genre_id: 6, movie_id: 1},
+  {genre_id: 6, movie_id: 5},
+  {genre_id: 6, movie_id: 8},
+  {genre_id: 7, movie_id: 2},
+  {genre_id: 7, movie_id: 3},
+  {genre_id: 7, movie_id: 7}
+])
