@@ -34,6 +34,7 @@ Genre.create!([
   {name: "Action"},
   {name: "Thriller"}
 ])
+
 MovieGenre.create!([
   {genre_id: 1, movie_id: 1},
   {genre_id: 1, movie_id: 2},
@@ -56,5 +57,6 @@ MovieGenre.create!([
   {genre_id: 6, movie_id: 8},
   {genre_id: 7, movie_id: 2},
   {genre_id: 7, movie_id: 3},
-  {genre_id: 7, movie_id: 7}
+  {genre_id: 7, movie_id: 7},
+  {genre_id: 5, movie_id: 5}
 ])
