@@ -1,0 +1,79 @@
+<h1 style="color:teal">Movie title : <%= @movie.title %></h1>
+<h3 style="color:darkseagreen">Released in <%= @movie.year %>
+ - - - - Genres: <%= @movie.genre_names %></h3>
+<h4 style="color:mediumaquamarine">Directed by <%= @movie.director %></h4>
+
+<p>Plot: <%= @movie.plot %></p>
+<h4 style="color:darkcyan">In English? <%= @movie.english %></h4>
+<p><a href="https://www.imdb.com/"> Other films directed by <%= @movie.director %></a> </p>
+
+<hr>
+
+<h3 style="color:teal">We'd love to get your thoughts on the film!</h3>
+
+<form action="" method="get" class="user-input">
+  <div class="user-input">
+
+<div>
+  <h4>How many stars would you give the film?</h4>
+  1 <input type="radio" checked name="stars">
+  2 <input type="radio" checked name="stars">
+  3 <input type="radio" checked name="stars">
+  4 <input type="radio" checked name="stars">
+  5 <input type="radio" checked name="stars">
+</div>
+
+
+<div>
+  <h4><label for="favorite"> What were your favorite elements of the film? </label></h4>
+    <p><label for="plot"> Plot <input type="checkbox" id="favorite" name="favorite"></p>
+    <p><label for="actors"> Actors <input type="checkbox" id="favorite" name="favorite"></p>
+    <p><label for="actresses"> Actresses <input type="checkbox" id="favorite" name="favorite"></p>
+    <p><label for="cinematography"> Cinematography <input type="checkbox" id="favorite" name="favorite"></p>
+    <p><label for="theme"> Thematic takeaway <input type="checkbox" id="favorite" name="favorite"></p>
+    <p><label for="special_effects"> Special effects <input type="checkbox" id="favorite" name="favorite"></p>
+    <p><label for="set_design"> Set design <input type="checkbox" id="favorite" name="favorite"></p>
+</div>
+
+
+<div>
+  <label for="review"> Explain your rating... </label>
+    <input type="text" id="review" name="review" value="<%= @movie.title %> was..." size="90">
+</div>
+
+<div>
+  <h4>Thanks for your input! We'd love to get your feedback on other films. If you're interested in becoming a member, please sign up below.</h4>
+</div>
+
+<div>
+  <label for="username"> Username </label>
+    <input type="text" id="username" name="username" value="" size="90">
+</div>
+
+<div>
+  <label for="email"> Email </label>
+    <input type="email" id="email" name="email" value="" size="90">
+</div>
+
+<div>
+  <label for="password"> Password </label>
+    <input type="password" id="password" name="password" minlength="8" maxlength="20" size="90">
+    8 - 20 characters
+</div>
+
+<div>
+  <label for="password_verification"> Verify Password </label>
+    <input type="password" id="password_verification" name="password_verification" minlength="8" maxlength="20" size="90">
+</div>
+
+</div>
+</form>
+
+<hr>
+<div>
+  <label for="site-search">Search for other films:</label>
+  <input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+
+  <button>Search</button>
+</div>
