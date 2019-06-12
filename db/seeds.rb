@@ -25,6 +25,7 @@ User.create!([
   {name: "Morgan Taylor", email: "morgan@gmail.com", password_digest: "$2a$10$2aoaYjkwhILBc83QUdXy4elDAg88fHWI0tPaUz26vOd5gU0N1NqEC", admin: false},
   {name: "Ally Jones", email: "ally@gmail.com", password_digest: "$2a$10$87jv.FloSTYF3l2WzgrHlOhWVnP25DoVKamkKOuMdd5.YZV04BHR6", admin: true}
 ])
+
 Genre.create!([
   {name: "Sci-Fi"},
   {name: "Comedy"},
