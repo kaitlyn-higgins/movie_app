@@ -6,3 +6,4 @@
   json.age actor.age
   json.movie_title actor.movie.title
   json.movie_plot actor.movie.plot
+  # json.full_name actor.first_name  + actor.last_name
