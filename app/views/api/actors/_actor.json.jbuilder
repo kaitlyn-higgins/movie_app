@@ -4,6 +4,7 @@
   json.known_for actor.known_for
   json.gender actor.gender
   json.age actor.age
-  json.movie_title actor.movie.title
-  json.movie_plot actor.movie.plot
+  json.movie_id actor.movie_id
+  # json.movie_title actor.movie.title
+  # json.movie_plot actor.movie.plot
   # json.full_name actor.first_name  + actor.last_name
